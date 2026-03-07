@@ -1,23 +1,27 @@
 name: Generate Pacman Contribution Graph
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: "0 */12 * * *"
-  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
-  build:
+  generate:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Generate pacman graph
+      - name: Generate snake animation
         uses: Platane/snk@v3
         with:
           github_user_name: juandiegogalindo
           outputs: |
             dist/pacman-contribution-graph.svg
+            dist/pacman-contribution-graph-dark.svg?palette=github-dark
 
-      - name: Push pacman graph
+      - name: Push snake animation
         uses: crazy-max/ghaction-github-pages@v3
         with:
           target_branch: output
