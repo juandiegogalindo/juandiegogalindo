@@ -4,11 +4,11 @@
 
 ###
 
-<p align="right">Estudiante Ingenieria de Sistemas (VII)<br>Univerdsidad Piloto de Colombia</p>
+<p align="center">Estudiante Ingenieria de Sistemas (VII)<br>Univerdsidad Piloto de Colombia</p>
 
 ###
 
-<h2 align="center">PROGRAMAS</h2>
+<h2 align="center">SKILLS</h2>
 
 ###
 
